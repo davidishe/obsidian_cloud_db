@@ -1,0 +1,5 @@
+CWD: /Users/akobiyada/Documents/Obsidian/obsidian_cloud_db
+Found docx files: ['Tokenova+Terra RWA_полный фарш_v2 (1).docx']
+Processing Tokenova+Terra RWA_полный фарш_v2 (1).docx
+Zip content: ['word/numbering.xml', 'word/settings.xml', 'word/fontTable.xml', 'word/styles.xml', 'word/document.xml']...
+Written to extracted_text.md

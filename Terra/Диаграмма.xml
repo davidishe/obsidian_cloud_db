@@ -1,0 +1,256 @@
+<mxfile host="app.diagrams.net" modified="2026-01-23T00:00:00.000Z" agent="GPT-5.2 Thinking" version="24.7.7" type="device">
+  <diagram id="investor_flow" name="Инвестор — покупка и выход (refund)">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1240" pageHeight="1754" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <!-- Nodes -->
+        <mxCell id="2" value="Старт" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="460" y="40" width="140" height="60" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="3" value="Открыть Tokenova (Telegram WebApp/сайт)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="130" width="340" height="70" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="4" value="Регистрация / вход" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="420" y="230" width="220" height="60" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="5" value="Просмотр проектов&#10;и выбор проекта" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="320" width="260" height="80" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="6" value="Открыть карточку проекта" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="420" y="430" width="220" height="60" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="7" value="Подключить кошелёк Tonkeeper" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="390" y="520" width="280" height="60" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="8" value="Есть USDT&#10;в кошельке?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="470" y="610" width="140" height="120" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="9" value="Пополнить Tonkeeper USDT (опционально)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="760" y="635" width="320" height="70" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="10" value="Выбрать количество токенов" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="770" width="260" height="60" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="11" value="Подтвердить транзакцию&#10;в кошельке" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="860" width="260" height="70" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="12" value="Получить токены проекта" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="420" y="960" width="220" height="60" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="13" value="«Мои сделки»&#10;— увидеть позицию" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="1050" width="260" height="70" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="14" value="Нужен выход&#10;(refund)?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="470" y="1140" width="140" height="120" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="15" value="Нажать «Refund»&#10;в «Мои сделки»" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="1165" width="280" height="70" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="16" value="Отправить токены обратно&#10;в смарт-контракт" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="1265" width="280" height="70" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="17" value="Получить USDT обратно" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="150" y="1365" width="220" height="60" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="18" value="Держать токены&#10;до завершения проекта" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="760" y="1165" width="320" height="70" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="19" value="Завершение сбора / выкуп актива" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="790" y="1265" width="260" height="60" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="20" value="Получить NFT-титул&#10;на долю (если предусмотрено проектом)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="750" y="1355" width="340" height="80" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="21" value="Финиш" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="460" y="1480" width="140" height="60" as="geometry"/>
+        </mxCell>
+
+        <!-- Edges -->
+        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" edge="1" parent="1" source="2" target="3">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" edge="1" parent="1" source="3" target="4">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" edge="1" parent="1" source="4" target="5">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" edge="1" parent="1" source="5" target="6">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" edge="1" parent="1" source="6" target="7">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" edge="1" parent="1" source="7" target="8">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- Funds decision -->
+        <mxCell id="e7_yes" value="Да" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" edge="1" parent="1" source="8" target="10">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e7_no" value="Нет" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" edge="1" parent="1" source="8" target="9">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e8_back" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" edge="1" parent="1" source="9" target="10">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- Purchase -->
+        <mxCell id="e9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" edge="1" parent="1" source="10" target="11">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" edge="1" parent="1" source="11" target="12">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" edge="1" parent="1" source="12" target="13">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" edge="1" parent="1" source="13" target="14">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- Refund decision -->
+        <mxCell id="e13_yes" value="Да" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" edge="1" parent="1" source="14" target="15">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e13_no" value="Нет" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" edge="1" parent="1" source="14" target="18">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- Refund path -->
+        <mxCell id="e14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" edge="1" parent="1" source="15" target="16">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" edge="1" parent="1" source="16" target="17">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e16_end" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" edge="1" parent="1" source="17" target="21">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- Hold path -->
+        <mxCell id="e17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" edge="1" parent="1" source="18" target="19">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" edge="1" parent="1" source="19" target="20">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e19_end" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" edge="1" parent="1" source="20" target="21">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+
+  <diagram id="issuer_flow" name="Эмитент — размещение проекта">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1240" pageHeight="1754" math="0" shadow="0">
+      <root>
+        <mxCell id="0i"/>
+        <mxCell id="1i" parent="0i"/>
+
+        <!-- Nodes -->
+        <mxCell id="i2" value="Старт" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1i">
+          <mxGeometry x="460" y="40" width="140" height="60" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="i3" value="Регистрация / вход" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1i">
+          <mxGeometry x="420" y="130" width="220" height="60" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="i4" value="Подключить кошелёк Tonkeeper" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1i">
+          <mxGeometry x="390" y="220" width="280" height="60" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="i5" value="«Мои проекты» →&#10;заполнить заявку" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1i">
+          <mxGeometry x="400" y="310" width="260" height="70" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="i6" value="Создать токены проекта" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1i">
+          <mxGeometry x="420" y="410" width="220" height="60" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="i7" value="Выпустить (деплоить)&#10;смарт-контракт" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1i">
+          <mxGeometry x="400" y="500" width="260" height="70" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="i8" value="Настроить смарт-контракт&#10;(параметры, сроки, цели)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1i">
+          <mxGeometry x="370" y="600" width="320" height="80" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="i9" value="Отправить на модерацию" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1i">
+          <mxGeometry x="420" y="710" width="220" height="60" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="i10" value="Проект одобрен?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1i">
+          <mxGeometry x="470" y="800" width="140" height="120" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="i11" value="Доработать заявку/данные&#10;и отправить повторно" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1i">
+          <mxGeometry x="120" y="825" width="300" height="80" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="i12" value="Старт продаж токенов" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1i">
+          <mxGeometry x="760" y="830" width="260" height="60" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="i13" value="Финиш" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1i">
+          <mxGeometry x="460" y="980" width="140" height="60" as="geometry"/>
+        </mxCell>
+
+        <!-- Edges -->
+        <mxCell id="ie1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" edge="1" parent="1i" source="i2" target="i3">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="ie2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" edge="1" parent="1i" source="i3" target="i4">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="ie3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" edge="1" parent="1i" source="i4" target="i5">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="ie4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" edge="1" parent="1i" source="i5" target="i6">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="ie5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" edge="1" parent="1i" source="i6" target="i7">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="ie6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" edge="1" parent="1i" source="i7" target="i8">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="ie7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" edge="1" parent="1i" source="i8" target="i9">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="ie8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" edge="1" parent="1i" source="i9" target="i10">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="ie_yes" value="Да" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" edge="1" parent="1i" source="i10" target="i12">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="ie_no" value="Нет" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" edge="1" parent="1i" source="i10" target="i11">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="ie_back" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" edge="1" parent="1i" source="i11" target="i9">
+          <mxGeometry relative="1" as="geometry"/>

@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tokenova - Новые шортзы для ревью</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 2cm;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', sans-serif;
+            line-height: 1.7;
+            color: #2c3e50;
+            background: #f8f9fa;
+            padding: 40px 20px;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 60px;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.08);
+            border-radius: 8px;
+        }
+        
+        .cover {
+            text-align: center;
+            padding: 80px 0 100px;
+            border-bottom: 3px solid #e91e63;
+            margin-bottom: 60px;
+        }
+        
+        .cover h1 {
+            font-size: 3em;
+            color: #e91e63;
+            margin-bottom: 20px;
+            font-weight: 700;
+            letter-spacing: -1px;
+        }
+        
+        .cover .subtitle {
+            font-size: 1.4em;
+            color: #546e7a;
+            margin: 20px 0;
+            font-weight: 300;
+        }
+        
+        .cover .date {
+            color: #90a4ae;
+            margin-top: 40px;
+            font-size: 0.95em;
+        }
+        
+        .short-section {
+            margin-bottom: 80px;
+            page-break-inside: avoid;
+        }
+        
+        h2 {
+            color: #e91e63;
+            font-size: 2em;
+            margin: 40px 0 30px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #f8bbd0;
+            page-break-after: avoid;
+        }
+        
+        h3 {
+            color: #37474f;
+            font-size: 1.3em;
+            margin: 30px 0 15px;
+            padding-left: 15px;
+            border-left: 4px solid #e91e63;
+            page-break-after: avoid;
+        }
+        
+        .metadata {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            padding: 20px 25px;
+            border-radius: 8px;
+            margin: 20px 0;
+            font-size: 1.05em;
+            border-left: 4px solid #5c6bc0;
+        }
+        
+        .metadata strong {
+            color: #283593;
+        }
+        
+        .voiceover {
+            background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%);
+            padding: 25px;
+            border-radius: 8px;
+            margin: 25px 0;
+            font-style: italic;
+            line-height: 1.9;
+            border-left: 5px solid #ff9800;
+            font-size: 1.05em;
+        }
+        
+        .voiceover p {
+            margin-bottom: 12px;
+        }
+        
+        .voiceover p:last-child {
+            margin-bottom: 0;
+        }
+        
+        .description {
+            background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+            padding: 20px 25px;
+            border-radius: 8px;
+            margin: 25px 0;
+            border-left: 5px solid #2196f3;
+        }
+        
+        .description p {
+            margin-bottom: 10px;
+            line-height: 1.8;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-size: 0.95em;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        thead {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        
+        th {
+            padding: 15px 12px;
+            text-align: left;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.85em;
+            letter-spacing: 0.5px;
+        }
+        
+        td {
+            padding: 14px 12px;
+            border-bottom: 1px solid #eceff1;
+        }
+        
+        tbody tr:hover {
+            background-color: #f5f5f5;
+        }
+        
+        tbody tr:last-child td {
+            border-bottom: none;
+        }
+        
+        .hashtags {
+            background: linear-gradient(135deg, #e8eaf6 0%, #c5cae9 100%);
+            padding: 15px 20px;
+            border-radius: 8px;
+            color: #3f51b5;
+            font-weight: 500;
+            margin: 20px 0;
+            font-size: 0.95em;
+            border-left: 4px solid #3f51b5;
+        }
+        
+        .page-break {
+            page-break-after: always;
+        }
+        
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            
+            .container {
+                box-shadow: none;
+                padding: 0;
+            }
+            
+            .short-section {
+                page-break-inside: avoid;
+            }
+            
+            h2 {
+                page-break-after: avoid;
+            }
+        }
+        
+        @media screen and (max-width: 768px) {
+            .container {
+                padding: 30px 20px;
+            }
+            
+            .cover h1 {
+                font-size: 2em;
+            }
+            
+            table {
+                font-size: 0.85em;
+            }
+            
+            th, td {
+                padding: 10px 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="cover">
+            <h1>Tokenova</h1>
+            <div class="subtitle">Новые шортзы для ревью</div>
+            <div class="date">Январь 2026</div>
+        </div>
+
+        <!-- Short 6 -->
+        <div class="short-section">
+            <h2>Shorts 6 — NFT, который даёт право, а не картинку</h2>
+            
+            <h3>Заголовок</h3>
+            <div class="metadata">
+                <strong>Tokenova. NFT — это не картинка, а юридическое право</strong>
+            </div>
+            
+            <h3>Длительность</h3>
+            <div class="metadata">
+                <strong>30–40 сек</strong>
+            </div>
+            
+            <h3>Озвучка (финал)</h3>
+            <div class="voiceover">
+                <p>Большинство NFT — это картинки и коллекционные предметы.</p>
+                <p>В Tokenova NFT работает иначе: это юридический титул владения долей актива.</p>
+                <p>Когда ты покупаешь токены проекта, ты получаешь NFT-сертификат, который подтверждает твою долю в SPV.</p>
+                <p>Это не просто файл в блокчейне — это документ, который даёт право на доход и участие в управлении.</p>
+                <p>Хочешь увидеть, как это работает? Ссылка в описании.</p>
+            </div>
+            
+            <h3>Видеоряд (по сценам)</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Время</th>
+                        <th>Видеоряд</th>
+                        <th>Текст на экране</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>0–3</td>
+                        <td>Хук</td>
+                        <td>NFT ≠ картинка</td>
+                    </tr>
+                    <tr>
+                        <td>3–10</td>
+                        <td>Популярные NFT (обезьяны/арт)</td>
+                        <td>Коллекционка</td>
+                    </tr>
+                    <tr>
+                        <td>10–20</td>
+                        <td>Скрин NFT-титула в приложении</td>
+                        <td>Tokenova = право</td>
+                    </tr>
+                    <tr>
+                        <td>20–30</td>
+                        <td>Схема: NFT → доля SPV → доход</td>
+                        <td>Юридический смысл</td>
+                    </tr>
+                    <tr>
+                        <td>30–40</td>
+                        <td>CTA</td>
+                        <td>Ссылка в описании</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <h3>Описание</h3>
+            <div class="description">
+                <p>NFT в Tokenova — это не картинка, а юридический титул на долю актива.</p>
+                <p>Вход: https://t.me/tokenova_space_bot?startapp=tiktok</p>
+                <p>Не финсовет.</p>
+            </div>
+            
+            <h3>Хештеги</h3>
+            <div class="hashtags">
+                #nft #rwa #tokenova #ton #юридическийтитул #инвестиции #web3 #активы
+            </div>
+        </div>
+
+        <div class="page-break"></div>
+
+        <!-- Short 7 -->
+        <div class="short-section">
+            <h2>Shorts 7 — Откуда берётся доходность 30–120%</h2>
+            
+            <h3>Заголовок</h3>
+            <div class="metadata">
+                <strong>Tokenova. Откуда доходность 30–120% годовых</strong>
+            </div>
+            
+            <h3>Длительность</h3>
+            <div class="metadata">
+                <strong>40–50 сек</strong>
+            </div>
+            
+            <h3>Озвучка (финал)</h3>
+            <div class="voiceover">
+                <p>Доходность 30–120% в год — это не магия и не пирамида.</p>
+                <p>Это конкретная экономика конкретных проектов.</p>
+                <p>Например: покупка земли под застройку за $100 тысяч, через год продажа за $150 тысяч — это 50% годовых.</p>
+                <p>Или аренда коммерческой недвижимости с доходностью 8–12% плюс рост стоимости актива.</p>
+                <p>Каждый проект показывает свою модель: откуда деньги, какие риски, какой горизонт.</p>
+                <p>Никакого хайпа — только понятная математика.</p>
+                <p>Хочешь изучить проекты? Ссылка в описании.</p>
+            </div>
+            
+            <h3>Видеоряд (по сценам)</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Время</th>
+                        <th>Видеоряд</th>
+                        <th>Текст на экране</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>0–3</td>
+                        <td>Хук</td>
+                        <td>30–120% — откуда?</td>
+                    </tr>
+                    <tr>
+                        <td>3–15</td>
+                        <td>B-roll земли/стройки</td>
+                        <td>Пример: земля $100k → $150k</td>
+                    </tr>
+                    <tr>
+                        <td>15–25</td>
+                        <td>Коммерческая недвижимость</td>
+                        <td>Аренда + рост</td>
+                    </tr>
+                    <tr>
+                        <td>25–35</td>
+                        <td>Экран проекта с моделью доходности</td>
+                        <td>Понятная математика</td>
+                    </tr>
+                    <tr>
+                        <td>35–50</td>
+                        <td>CTA</td>
+                        <td>Изучи проекты ↓</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <h3>Описание</h3>
+            <div class="description">
+                <p>Доходность в Tokenova — это экономика конкретных активов, а не обещания.</p>
+                <p>Вход: https://t.me/tokenova_space_bot?startapp=tiktok</p>
+                <p>Не финсовет. Изучайте риски.</p>
+            </div>
+            
+            <h3>Хештеги</h3>
+            <div class="hashtags">
+                #инвестиции #доходность #rwa #tokenova #недвижимость #ton #web3 #пассивныйдоход
+            </div>
+        </div>
+
+        <div class="page-break"></div>
+
+        <!-- Short 8 -->
+        <div class="short-section">
+            <h2>Shorts 8 — Чем Tokenova отличается от банков и фондов</h2>
+            
+            <h3>Заголовок</h3>
+            <div class="metadata">
+                <strong>Tokenova vs банки и фонды. В чём разница</strong>
+            </div>
+            
+            <h3>Длительность</h3>
+            <div class="metadata">
+                <strong>35–45 сек</strong>
+            </div>
+            
+            <h3>Озвучка (финал)</h3>
+            <div class="voiceover">
+                <p>Банковский вклад даёт 5–8% годовых, но деньги заморожены.</p>
+                <p>Инвестиционный фонд берёт комиссию 2–3% и управляет за тебя.</p>
+                <p>Tokenova работает иначе.</p>
+                <p>Ты покупаешь долю актива напрямую через смарт-контракт — без посредников.</p>
+                <p>Твои токены в твоём кошельке, ты можешь продать их в любой момент.</p>
+                <p>Никаких управляющих, никаких скрытых комиссий.</p>
+                <p>Только ты, актив и прозрачная механика блокчейна.</p>
+                <p>Ссылка в описании.</p>
+            </div>
+            
+            <h3>Видеоряд (по сценам)</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Время</th>
+                        <th>Видеоряд</th>
+                        <th>Текст на экране</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>0–3</td>
+                        <td>Хук</td>
+                        <td>Банк vs Фонд vs Tokenova</td>
+                    </tr>
+                    <tr>
+                        <td>3–10</td>
+                        <td>Банк: 5–8%, заморожено</td>
+                        <td>Низкая доходность</td>
+                    </tr>
+                    <tr>
+                        <td>10–18</td>
+                        <td>Фонд: комиссии, управляющий</td>
+                        <td>Посредники</td>
+                    </tr>
+                    <tr>
+                        <td>18–28</td>
+                        <td>Tokenova: прямая покупка</td>
+                        <td>Без посредников</td>
+                    </tr>
+                    <tr>
+                        <td>28–38</td>
+                        <td>Кошелёк с токенами</td>
+                        <td>Твой контроль</td>
+                    </tr>
+                    <tr>
+                        <td>38–45</td>
+                        <td>CTA</td>
+                        <td>Ссылка в описании</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <h3>Описание</h3>
+            <div class="description">
+                <p>Tokenova — это прямое владение активом без банков и управляющих.</p>
+                <p>Вход: https://t.me/tokenova_space_bot?startapp=tiktok</p>
+                <p>Не финсовет.</p>
+            </div>
+            
+            <h3>Хештеги</h3>
+            <div class="hashtags">
+                #инвестиции #банки #фонды #tokenova #rwa #ton #web3 #смартконтракт #криптовалюта
+            </div>
+        </div>
+
+        <div class="page-break"></div>
+
+        <!-- Short 9 -->
+        <div class="short-section">
+            <h2>Shorts 9 — Купить виллу за $50 — это шутка?</h2>
+            
+            <h3>Заголовок</h3>
+            <div class="metadata">
+                <strong>Tokenova. Купить виллу за $50 — как это работает</strong>
+            </div>
+            
+            <h3>Длительность</h3>
+            <div class="metadata">
+                <strong>30–40 сек</strong>
+            </div>
+            
+            <h3>Озвучка (финал)</h3>
+            <div class="voiceover">
+                <p>Купить виллу за $50 — звучит как шутка, но это реальная механика.</p>
+                <p>Вилла стоит, например, $500 тысяч.</p>
+                <p>Она делится на 10 тысяч долей по $50 каждая.</p>
+                <p>Ты покупаешь одну долю — и становишься совладельцем актива.</p>
+                <p>Получаешь доход пропорционально своей доле.</p>
+                <p>Это называется фракционное владение, и в Tokenova оно работает через блокчейн.</p>
+                <p>Хочешь попробовать? Ссылка в описании.</p>
+            </div>
+            
+            <h3>Видеоряд (по сценам)</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Время</th>
+                        <th>Видеоряд</th>
+                        <th>Текст на экране</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>0–3</td>
+                        <td>Хук</td>
+                        <td>Вилла за $50?</td>
+                    </tr>
+                    <tr>
+                        <td>3–12</td>
+                        <td>Красивая вилла</td>
+                        <td>$500,000</td>
+                    </tr>
+                    <tr>
+                        <td>12–22</td>
+                        <td>Анимация дробления</td>
+                        <td>10,000 долей × $50</td>
+                    </tr>
+                    <tr>
+                        <td>22–32</td>
+                        <td>Покупка 1 доли</td>
+                        <td>Ты = совладелец</td>
+                    </tr>
+                    <tr>
+                        <td>32–40</td>
+                        <td>CTA</td>
+                        <td>Попробуй ↓</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <h3>Описание</h3>
+            <div class="description">
+                <p>Фракционное владение: покупай долю актива от $50.</p>
+                <p>Вход: https://t.me/tokenova_space_bot?startapp=tiktok</p>
+                <p>Не финсовет.</p>
+            </div>
+            
+            <h3>Хештеги</h3>
+            <div class="hashtags">
+                #инвестиции #недвижимость #tokenova #rwa #фракционноевладение #ton #web3 #доступныеинвестиции
+            </div>
+        </div>
+
+        <div class="page-break"></div>
+
+        <!-- Short 10 -->
+        <div class="short-section">
+            <h2>Shorts 10 — Какие реальные активы можно токенизировать</h2>
+            
+            <h3>Заголовок</h3>
+            <div class="metadata">
+                <strong>Tokenova. Какие активы можно токенизировать</strong>
+            </div>
+            
+            <h3>Длительность</h3>
+            <div class="metadata">
+                <strong>35–45 сек</strong>
+            </div>
+            
+            <h3>Озвучка (финал)</h3>
+            <div class="voiceover">
+                <p>Что можно токенизировать в Tokenova?</p>
+                <p>Земля под застройку — покупаешь долю, получаешь прибыль от продажи.</p>
+                <p>Коммерческая недвижимость — офисы, склады, торговые центры с арендным доходом.</p>
+                <p>Жилая недвижимость — квартиры и дома, которые сдаются или продаются.</p>
+                <p>Инфраструктурные проекты — солнечные электростанции, парковки, логистические хабы.</p>
+                <p>Всё, что приносит доход или растёт в цене, можно разделить на доли и токенизировать.</p>
+                <p>Платформа открыта для разных типов активов.</p>
+                <p>Хочешь увидеть проекты? Ссылка в описании.</p>
+            </div>
+            
+            <h3>Видеоряд (по сценам)</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Время</th>
+                        <th>Видеоряд</th>
+                        <th>Текст на экране</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>0–3</td>
+                        <td>Хук</td>
+                        <td>Что токенизировать?</td>
+                    </tr>
+                    <tr>
+                        <td>3–10</td>
+                        <td>Земля</td>
+                        <td>Земля под застройку</td>
+                    </tr>
+                    <tr>
+                        <td>10–18</td>
+                        <td>Офисы/склады</td>
+                        <td>Коммерческая недвижимость</td>
+                    </tr>
+                    <tr>
+                        <td>18–26</td>
+                        <td>Квартиры</td>
+                        <td>Жильё</td>
+                    </tr>
+                    <tr>
+                        <td>26–34</td>
+                        <td>Солнечные панели/парковки</td>
+                        <td>Инфраструктура</td>
+                    </tr>
+                    <tr>
+                        <td>34–45</td>
+                        <td>CTA</td>
+                        <td>Смотри проекты ↓</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <h3>Описание</h3>
+            <div class="description">
+                <p>Tokenova токенизирует землю, недвижимость, инфраструктуру — всё, что приносит доход.</p>
+                <p>Вход: https://t.me/tokenova_space_bot?startapp=tiktok</p>
+                <p>Не финсовет.</p>
+            </div>
+            
+            <h3>Хештеги</h3>
+            <div class="hashtags">
+                #токенизация #rwa #активы #недвижимость #tokenova #инвестиции #ton #web3 #инфраструктура
+            </div>
+        </div>
+    </div>
+</body>
+</html>
